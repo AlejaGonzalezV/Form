@@ -1,6 +1,6 @@
 ﻿namespace Proyecto1
 {
-    partial class Form2
+    partial class VentanaLista
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaLista));
             this.ListaIngresos = new System.Windows.Forms.ListBox();
             this.TituloIngresos = new System.Windows.Forms.Label();
             this.ExaminarBut = new System.Windows.Forms.Button();
+            this.File = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // ListaIngresos
@@ -66,7 +67,11 @@
             this.ExaminarBut.Text = "Examinar";
             this.ExaminarBut.UseVisualStyleBackColor = true;
             // 
-            // Form2
+            // File
+            // 
+            this.File.FileName = "openFileDialog1";
+            // 
+            // VentanaLista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -76,8 +81,8 @@
             this.Controls.Add(this.TituloIngresos);
             this.Controls.Add(this.ListaIngresos);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "VentanaLista";
+            this.Text = "Lista de ingresos";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -88,5 +93,6 @@
         private System.Windows.Forms.ListBox ListaIngresos;
         private System.Windows.Forms.Label TituloIngresos;
         private System.Windows.Forms.Button ExaminarBut;
+        private System.Windows.Forms.OpenFileDialog File;
     }
 }
