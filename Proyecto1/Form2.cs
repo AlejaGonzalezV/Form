@@ -43,7 +43,7 @@ namespace Proyecto1
 
             this.Close();
             VentanaPrincipal ventana = new VentanaPrincipal();
-            ventana.Show();
+            
 
         }
 

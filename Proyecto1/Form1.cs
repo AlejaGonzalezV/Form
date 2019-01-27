@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Proyecto1
 {
@@ -43,7 +44,7 @@ namespace Proyecto1
         private void button2_Click(object sender, EventArgs e)
         {
 
-            this.Hide();
+            
             VentanaLista lista = new VentanaLista();
             lista.Show();
 
@@ -69,5 +70,7 @@ namespace Proyecto1
         {
 
         }
+
     }
+
 }

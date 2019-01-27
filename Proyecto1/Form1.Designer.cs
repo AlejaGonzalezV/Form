@@ -113,6 +113,7 @@
             // 
             // IngresarBut
             // 
+            this.IngresarBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.IngresarBut.Font = new System.Drawing.Font("Microsoft JhengHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IngresarBut.Location = new System.Drawing.Point(418, 463);
             this.IngresarBut.Name = "IngresarBut";
@@ -124,6 +125,7 @@
             // 
             // ventanaL
             // 
+            this.ventanaL.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ventanaL.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ventanaL.Location = new System.Drawing.Point(806, 491);
             this.ventanaL.Name = "ventanaL";
@@ -137,6 +139,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(934, 533);
             this.Controls.Add(this.ventanaL);
@@ -149,6 +152,7 @@
             this.Controls.Add(this.NombreTx);
             this.Controls.Add(this.TituloTx);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "VentanaPrincipal";
             this.Text = "Registro de visitantes";
             this.Load += new System.EventHandler(this.Form1_Load);

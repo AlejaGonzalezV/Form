@@ -63,6 +63,7 @@ namespace Proyecto1
             // 
             // ExaminarBut
             // 
+            this.ExaminarBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ExaminarBut.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExaminarBut.Location = new System.Drawing.Point(395, 172);
             this.ExaminarBut.Name = "ExaminarBut";
@@ -70,11 +71,7 @@ namespace Proyecto1
             this.ExaminarBut.TabIndex = 2;
             this.ExaminarBut.Text = "Examinar";
             this.ExaminarBut.UseVisualStyleBackColor = true;
-
-
-
             this.ExaminarBut.Click += new System.EventHandler(this.ExaminarBut_Click_1);
-
             // 
             // File
             // 
@@ -83,6 +80,7 @@ namespace Proyecto1
             // 
             // CerrarBoton
             // 
+            this.CerrarBoton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CerrarBoton.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CerrarBoton.Location = new System.Drawing.Point(791, 482);
             this.CerrarBoton.Name = "CerrarBoton";
