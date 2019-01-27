@@ -70,7 +70,11 @@ namespace Proyecto1
             this.ExaminarBut.TabIndex = 2;
             this.ExaminarBut.Text = "Examinar";
             this.ExaminarBut.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
 
+=======
+            this.ExaminarBut.Click += new System.EventHandler(this.ExaminarBut_Click_1);
+>>>>>>> 67974fe6afa1ca734abe49c86ba3af921a6130f7
             // 
             // File
             // 
