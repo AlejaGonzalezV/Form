@@ -23,6 +23,13 @@ namespace Proyecto1
 
         }
 
+
+        private void ExaminarBut_Click(object sender, EventArgs e)
+        {
+
+            
+        }
+
         private void ListaIngresos_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -37,6 +44,13 @@ namespace Proyecto1
 
         }
 
+
+        private void File_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+
         private void ExaminarBut_Click_1(object sender, EventArgs e)
         {
             File.InitialDirectory = ".//P1//Proyecto1-Integrador//Proyecto1";
@@ -49,5 +63,6 @@ namespace Proyecto1
 
 
         }
+
     }
 }
