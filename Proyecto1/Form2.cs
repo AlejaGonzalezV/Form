@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,12 +23,6 @@ namespace Proyecto1
 
         }
 
-
-        private void ExaminarBut_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void ListaIngresos_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -39,6 +34,19 @@ namespace Proyecto1
             this.Close();
             VentanaPrincipal ventana = new VentanaPrincipal();
             ventana.Show();
+
+        }
+
+        private void ExaminarBut_Click_1(object sender, EventArgs e)
+        {
+            File.InitialDirectory = ".//P1//Proyecto1-Integrador//Proyecto1";
+            if (File.ShowDialog() == DialogResult.OK)
+            {
+                String nombre = File.FileName + ".txt";
+                Console.Write(nombre);
+
+            }
+
 
         }
     }
