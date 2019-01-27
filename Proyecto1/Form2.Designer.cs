@@ -44,6 +44,7 @@
             this.ListaIngresos.Name = "ListaIngresos";
             this.ListaIngresos.Size = new System.Drawing.Size(488, 244);
             this.ListaIngresos.TabIndex = 0;
+            this.ListaIngresos.SelectedIndexChanged += new System.EventHandler(this.ListaIngresos_SelectedIndexChanged);
             // 
             // TituloIngresos
             // 
@@ -69,7 +70,7 @@
             // 
             // File
             // 
-            this.File.FileName = "openFileDialog1";
+            this.File.FileName = "+";
             // 
             // VentanaLista
             // 

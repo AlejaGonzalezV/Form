@@ -21,5 +21,10 @@ namespace Proyecto1
         {
 
         }
+
+        private void ListaIngresos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
