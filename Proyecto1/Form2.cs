@@ -53,10 +53,11 @@ namespace Proyecto1
 
         private void ExaminarBut_Click_1(object sender, EventArgs e)
         {
-            File.InitialDirectory = ".//P1//Proyecto1-Integrador//Proyecto1";
+            File.InitialDirectory = @"\Proyecto1\Proyecto1";
             if (File.ShowDialog() == DialogResult.OK)
             {
-                String nombre = File.FileName + ".txt";
+                string nombre = File.FileName;
+                string archivo = nombre + ".txt";
                 Console.Write(nombre);
 
             }
