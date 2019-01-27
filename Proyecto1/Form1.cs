@@ -33,6 +33,11 @@ namespace Proyecto1
             string fecha_actual = Hoy.ToString("dd-MM-yyyy");
 
             icesi.Guardar(nombre, apellido, cedula, fecha_actual);
+
+            NombreTx.Clear();
+            ApellidoTx.Clear();
+            CedulaTx.Clear();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
