@@ -44,6 +44,7 @@
             this.ListaIngresos.Name = "ListaIngresos";
             this.ListaIngresos.Size = new System.Drawing.Size(488, 244);
             this.ListaIngresos.TabIndex = 0;
+            this.ListaIngresos.SelectedIndexChanged += new System.EventHandler(this.ListaIngresos_SelectedIndexChanged);
             // 
             // TituloIngresos
             // 
@@ -66,6 +67,7 @@
             this.ExaminarBut.TabIndex = 2;
             this.ExaminarBut.Text = "Examinar";
             this.ExaminarBut.UseVisualStyleBackColor = true;
+            this.ExaminarBut.Click += new System.EventHandler(this.ExaminarBut_Click);
             // 
             // File
             // 

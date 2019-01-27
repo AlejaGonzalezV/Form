@@ -59,6 +59,7 @@
             this.NombreTx.Name = "NombreTx";
             this.NombreTx.Size = new System.Drawing.Size(183, 32);
             this.NombreTx.TabIndex = 1;
+            this.NombreTx.TextChanged += new System.EventHandler(this.NombreTx_TextChanged);
             // 
             // ApellidoTx
             // 

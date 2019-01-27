@@ -23,7 +23,7 @@ namespace Proyecto1
 
             //      StreamWriter sw = new StreamWriter("C:\\Users\\VALENTINA.LAPTOP-B1KGBNOV\\Desktop\\INTEGRADOR\\P1\\Proyecto1Integrador\\Proyecto1\\Miguel.txt");
 
-            StreamWriter sw = new StreamWriter("..\\..\\data.txt",true);
+            StreamWriter sw = new StreamWriter("..\\..\\" + fecha + ".txt",true);
             sw.Write(nombre+"/");
             sw.Write(apellido + "/");
             sw.Write(cedula + "/");
@@ -31,9 +31,6 @@ namespace Proyecto1
             sw.WriteLine();
             sw.Close();
         }
-
-
-
 
 
     }
