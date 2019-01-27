@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -30,6 +31,23 @@ namespace Proyecto1
             sw.Write(fecha);
             sw.WriteLine();
             sw.Close();
+        }
+
+        public ArrayList Leer(string file)
+        {
+            StreamReader sr = new StreamReader(file);
+            string linea = "";
+            ArrayList registro = new ArrayList();
+
+
+            while ((linea = sr.ReadLine()) != null)
+            {
+                registro.Add(linea);
+            }
+
+            sr.Close();
+
+            return registro;
         }
 
 

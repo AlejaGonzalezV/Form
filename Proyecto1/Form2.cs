@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +14,11 @@ namespace Proyecto1
 {
     public partial class VentanaLista : Form
     {
+        Universidad icesi;
         public VentanaLista()
         {
             InitializeComponent();
+            icesi = new Universidad("ICESI");
         }
 
         private void VentanaLista_Load(object sender, EventArgs e)
@@ -56,9 +59,23 @@ namespace Proyecto1
             File.InitialDirectory = @"\Proyecto1\Proyecto1";
             if (File.ShowDialog() == DialogResult.OK)
             {
+
                 string nombre = File.FileName;
                 string archivo = nombre + ".txt";
+
                 Console.Write(nombre);
+
+                ArrayList registro = icesi.Leer(nombre);
+
+                ListaIngresos.BeginUpdate();
+
+                for(int i = 0; i< registro.Count; i++)
+                {
+                    ListaIngresos.Items.Add(registro[i]);
+                }
+
+
+                ListaIngresos.EndUpdate();
 
             }
 
