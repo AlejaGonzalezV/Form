@@ -83,6 +83,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VentanaLista";
             this.Text = "Lista de ingresos";
+            this.Load += new System.EventHandler(this.VentanaLista_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
