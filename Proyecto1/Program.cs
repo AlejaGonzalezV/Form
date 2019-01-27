@@ -16,9 +16,6 @@ namespace Proyecto1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Universidad u = new Universidad("ICESI");
-            u.Guardar("aleja", "gon", "2352", "dffsddf");
-            u.Guardar("angi", "gon", "2352", "dffsddf");
             Application.Run(new Form1());
             
           

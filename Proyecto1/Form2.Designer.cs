@@ -1,4 +1,6 @@
-﻿namespace Proyecto1
+﻿using System;
+
+namespace Proyecto1
 {
     partial class VentanaLista
     {
@@ -67,6 +69,7 @@
             this.ExaminarBut.TabIndex = 2;
             this.ExaminarBut.Text = "Examinar";
             this.ExaminarBut.UseVisualStyleBackColor = true;
+            this.ExaminarBut.Click += new System.EventHandler(this.ExaminarBut_Click);
             // 
             // File
             // 
@@ -88,6 +91,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void ExaminarBut_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

@@ -12,9 +12,11 @@ namespace Proyecto1
 {
     public partial class Form1 : Form
     {
+        Universidad icesi;
         public Form1()
         {
             InitializeComponent();
+            icesi = new Universidad("ICESI");
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -24,6 +26,17 @@ namespace Proyecto1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string nombre = NombreTx.Text;
+            string apellido = ApellidoTx.Text;
+            string cedula = CedulaTx.Text;
+            DateTime Hoy = DateTime.Today;
+            string fecha_actual = Hoy.ToString("dd-MM-yyyy");
+
+            icesi.Guardar(nombre, apellido, cedula, fecha_actual);
+
+            NombreTx.Clear();
+            ApellidoTx.Clear();
+            CedulaTx.Clear();
 
         }
 
@@ -43,6 +56,11 @@ namespace Proyecto1
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NombreTx_TextChanged(object sender, EventArgs e)
         {
 
         }
