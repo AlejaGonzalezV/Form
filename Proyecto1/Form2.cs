@@ -16,5 +16,10 @@ namespace Proyecto1
         {
             InitializeComponent();
         }
+
+        private void VentanaLista_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
