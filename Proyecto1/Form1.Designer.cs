@@ -1,6 +1,6 @@
 ﻿namespace Proyecto1
 {
-    partial class Form1
+    partial class VentanaPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaPrincipal));
             this.TituloTx = new System.Windows.Forms.Label();
             this.NombreTx = new System.Windows.Forms.TextBox();
             this.ApellidoTx = new System.Windows.Forms.TextBox();
@@ -37,7 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.IngresarBut = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.ventanaL = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TituloTx
@@ -122,24 +122,24 @@
             this.IngresarBut.UseVisualStyleBackColor = true;
             this.IngresarBut.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // ventanaL
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(806, 491);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 32);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Ver Ingresos";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ventanaL.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ventanaL.Location = new System.Drawing.Point(806, 491);
+            this.ventanaL.Name = "ventanaL";
+            this.ventanaL.Size = new System.Drawing.Size(117, 32);
+            this.ventanaL.TabIndex = 9;
+            this.ventanaL.Text = "Ver Ingresos";
+            this.ventanaL.UseVisualStyleBackColor = true;
+            this.ventanaL.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(934, 533);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.ventanaL);
             this.Controls.Add(this.IngresarBut);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -149,7 +149,7 @@
             this.Controls.Add(this.NombreTx);
             this.Controls.Add(this.TituloTx);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "VentanaPrincipal";
             this.Text = "Registro de visitantes";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -167,7 +167,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button IngresarBut;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ventanaL;
     }
 }
 

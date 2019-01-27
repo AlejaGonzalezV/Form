@@ -1,4 +1,6 @@
-﻿namespace Proyecto1
+﻿using System;
+
+namespace Proyecto1
 {
     partial class VentanaLista
     {
@@ -33,6 +35,7 @@
             this.TituloIngresos = new System.Windows.Forms.Label();
             this.ExaminarBut = new System.Windows.Forms.Button();
             this.File = new System.Windows.Forms.OpenFileDialog();
+            this.CerrarBoton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ListaIngresos
@@ -67,11 +70,22 @@
             this.ExaminarBut.TabIndex = 2;
             this.ExaminarBut.Text = "Examinar";
             this.ExaminarBut.UseVisualStyleBackColor = true;
-            this.ExaminarBut.Click += new System.EventHandler(this.ExaminarBut_Click);
             // 
             // File
             // 
-            this.File.FileName = "openFileDialog1";
+            this.File.FileName = "+";
+            // 
+            // CerrarBoton
+            // 
+            this.CerrarBoton.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CerrarBoton.Location = new System.Drawing.Point(791, 482);
+            this.CerrarBoton.Name = "CerrarBoton";
+            this.CerrarBoton.Size = new System.Drawing.Size(89, 32);
+            this.CerrarBoton.TabIndex = 3;
+            this.CerrarBoton.Text = "Cerrar";
+            this.CerrarBoton.UseMnemonic = false;
+            this.CerrarBoton.UseVisualStyleBackColor = true;
+            this.CerrarBoton.Click += new System.EventHandler(this.CerrarBoton_Click);
             // 
             // VentanaLista
             // 
@@ -79,6 +93,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(892, 526);
+            this.Controls.Add(this.CerrarBoton);
             this.Controls.Add(this.ExaminarBut);
             this.Controls.Add(this.TituloIngresos);
             this.Controls.Add(this.ListaIngresos);
@@ -91,11 +106,14 @@
 
         }
 
+
+
         #endregion
 
         private System.Windows.Forms.ListBox ListaIngresos;
         private System.Windows.Forms.Label TituloIngresos;
         private System.Windows.Forms.Button ExaminarBut;
         private System.Windows.Forms.OpenFileDialog File;
+        private System.Windows.Forms.Button CerrarBoton;
     }
 }

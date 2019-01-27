@@ -22,6 +22,7 @@ namespace Proyecto1
 
         }
 
+
         private void ExaminarBut_Click(object sender, EventArgs e)
         {
 
@@ -29,6 +30,15 @@ namespace Proyecto1
 
         private void ListaIngresos_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void CerrarBoton_Click(object sender, EventArgs e)
+        {
+
+            this.Close();
+            VentanaPrincipal ventana = new VentanaPrincipal();
+            ventana.Show();
 
         }
     }

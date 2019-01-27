@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Proyecto1
 {
-    public partial class Form1 : Form
+    public partial class VentanaPrincipal : Form
     {
         Universidad icesi;
-        public Form1()
+        public VentanaPrincipal()
         {
             InitializeComponent();
             icesi = new Universidad("ICESI");
@@ -42,6 +42,11 @@ namespace Proyecto1
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+            this.Hide();
+            VentanaLista lista = new VentanaLista();
+            lista.Show();
+
 
         }
 
