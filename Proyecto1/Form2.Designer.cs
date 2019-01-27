@@ -70,10 +70,12 @@ namespace Proyecto1
             this.ExaminarBut.TabIndex = 2;
             this.ExaminarBut.Text = "Examinar";
             this.ExaminarBut.UseVisualStyleBackColor = true;
+
             // 
             // File
             // 
             this.File.FileName = "+";
+            this.File.FileOk += new System.ComponentModel.CancelEventHandler(this.File_FileOk);
             // 
             // CerrarBoton
             // 

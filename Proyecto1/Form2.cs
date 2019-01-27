@@ -26,6 +26,7 @@ namespace Proyecto1
         private void ExaminarBut_Click(object sender, EventArgs e)
         {
 
+            
         }
 
         private void ListaIngresos_SelectedIndexChanged(object sender, EventArgs e)
@@ -41,5 +42,11 @@ namespace Proyecto1
             ventana.Show();
 
         }
+
+        private void File_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
     }
 }
