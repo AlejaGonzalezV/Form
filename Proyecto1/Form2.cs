@@ -63,7 +63,7 @@ namespace Proyecto1
                 string nombre = File.FileName;
                 string archivo = nombre + ".txt";
 
-                Console.Write(nombre);
+                ListaIngresos.Items.Clear();
 
                 ArrayList registro = icesi.Leer(nombre);
 
